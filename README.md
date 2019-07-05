@@ -18,9 +18,7 @@ This program aims to automate data collection from sets of these report PDFs int
   
 2. The `scraper.py` file must be accessible by the `main.py` file, which is used to execute the program (this can be achieved by making `__init__.py` files in all directories between `scraper.py` and `main.py`, or simply by keeping them in the same directory).
 
-3. Edit the `main.py` file to use the proper file path as an argument of the `Scraper` class instantiation.
-
-The basic file should look like this:
+3. Edit the `main.py` file to use the proper file path as an argument of the `Scraper` class instantiation. The basic file should look like this (where the file path reflects where the PDFs to be scraped are stored):
 
 ```python
 import scraper
