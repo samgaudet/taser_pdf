@@ -35,3 +35,11 @@ $ python3.6 main.py
 ```
 
 5. The output of the program, a CSV file called `export.csv` will be in the directory with all of your PDFs.
+
+## Improvements To Make
+
+- [ ] Implementation of `os` library that searches child directories.
+- [ ] Integrity check to make sure all PDFs include the same fields.
+- [ ] Improve error and exception handling.
+- [ ] Remove pandas `index` as a column in the dataframe.
+- [ ] Add PDF filename as a column in the dataframe for reference.
