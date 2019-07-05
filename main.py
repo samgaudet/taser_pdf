@@ -175,7 +175,7 @@ class Scraper:
 		"""
 		Scrape the contents of a set of pdf documents and assemble the data into a global dataframe.
 
-		:export df to csv: <CSV File> The csv containing scraped data from the dataframe
+		:exports df to csv: <CSV File> The csv containing scraped data from the dataframe
 		"""
 
 		self.getFilesFromPath()
