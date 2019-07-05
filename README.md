@@ -12,6 +12,15 @@ Law Enforcement agencies in the state of Connecticut are required to document ta
 
 This program aims to automate data collection from sets of these report PDFs into data sets that can be used by organizations, such as the ACLU, for analysis.
 
+## Requirements
+
+Python `3.x` must be installed on the computer used to run this program, and the following libraries are used (all of which can be installed with [pip](https://pip.pypa.io/en/stable/installing/)):
+* `os`
+* `pandas`
+* `numpy`
+* `pdfminer`
+ 
+
 ## Usage
 
 1. All PDFs to be scraped must be in the same folder.  
