@@ -33,6 +33,9 @@ class Scraper:
 			"Yes" : 1
 		}
 
+		# csv filename for exported pdf data
+		self.exportFilename = "export.csv"
+
 	# ===================================================================
 
 	def getFilesFromPath(self):
@@ -155,11 +158,24 @@ class Scraper:
 
 	# ===================================================================
 
+	def writeToCSV(self, df):
+		"""
+		Given a dataframe, write a CSV file with the contents of the dataframe.
+
+		:param df: <DataFrame> The dataframe containing all pdf data
+		"""
+
+		exportFilepath = self.filepath + self.exportFilename
+
+		df.to_csv(path_or_buf=exportFilepath)
+
+	# ===================================================================	
+
 	def scrape(self):
 		"""
 		Scrape the contents of a set of pdf documents and assemble the data into a global dataframe.
 
-		:return globgal variable scraped_pdf_df: <DataFrame> The dataframe containing scraped pdf data
+		:export df to csv: <CSV File> The csv containing scraped data from the dataframe
 		"""
 
 		self.getFilesFromPath()
@@ -175,13 +191,12 @@ class Scraper:
 			values = self.getValuesFromFields(fields)
 			df = self.addRowToDataFrame(df, values)
 
-		global scraped_pdf_df
-		scraped_pdf_df = df
+		self.writeToCSV(df)
 
 
 
-scraper = Scraper("test_pdfs/")
+scraper = Scraper("/Users/samgaudet/Documents/GitHub/taser_pdf/test_pdfs/")
 
 scraper.scrape()
 
-print(scraped_pdf_df)
+# print(scraped_pdf_df)
