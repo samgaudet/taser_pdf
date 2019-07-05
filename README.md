@@ -38,7 +38,7 @@ $ python3.6 main.py
 
 ## Improvements To Make
 
-- [ ] Implementation of `os` library that searches child directories.
+- [ ] Implementation of `os.walk` that searches child directories.
 - [ ] Integrity check to make sure all PDFs include the same fields.
 - [ ] Improve error and exception handling.
 - [ ] Remove pandas `index` as a column in the dataframe.
