@@ -32,7 +32,7 @@ Python `3.x` must be installed on the computer used to run this program, and the
 ```python
 import scraper
 
-scraper = scraper.Scraper("/Users/samgaudet/Documents/GitHub/taser_pdf/test_pdfs/")
+scraper = scraper.Scraper(filepath="/Users/samgaudet/Documents/GitHub/taser_pdf/test_pdfs/")
 
 scraper.scrape()
 ```
