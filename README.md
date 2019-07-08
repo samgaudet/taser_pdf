@@ -32,9 +32,9 @@ Python `3.x` must be installed on the computer used to run this program, and the
 ```python
 import scraper
 
-scraper = scraper.Scraper(filepath="/Users/samgaudet/Documents/GitHub/taser_pdf/test_pdfs/")
+myScraper = scraper.Scraper(filepath="/Users/samgaudet/Documents/GitHub/taser_pdf/test_pdfs/")
 
-scraper.scrape()
+myScraper.scrape()
 ```
 
 4. Execute the `main.py` file in the terminal:
